@@ -1,0 +1,55 @@
+<link rel="stylesheet" href="task.css">
+<!DOCTYPE html>
+<head>
+    
+    <title>Image Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Image Gallery</h1>
+    
+
+    <div class="different" id="differentbox">
+        <img src="C:\Users\91902\Downloads\code task 1\d1.jpg"  id="id=differentboxfull">
+        <span onclick="closedifferentboxfull()">X</span>
+    </div>
+
+    <div class="img">
+    
+        <img src="C:\Users\91902\Downloads\code task 1\d1.jpg"  onclick="opendifferentboxfull(this.src)">
+        <img src="C:\Users\91902\Downloads\code task 1\d2.jpg"  onclick="opendifferentboxfull(this.src)">
+        <img src="C:\Users\91902\Downloads\code task 1\d3.jpg"  onclick="opendifferentboxfull(this.src)">
+        <img src="C:\Users\91902\Downloads\code task 1\d4.jpg"  onclick="opendifferentboxfull(this.src)">
+        <img src="C:\Users\91902\Downloads\code task 1\d5.jpg"  onclick="opendifferentboxfull(this.src)">
+        <img src="C:\Users\91902\Downloads\code task 1\d6.jpg"  onclick="opendifferentboxfull(this.src)">
+        <img src="C:\Users\91902\Downloads\code task 1\d7.jpg"  onclick="opendifferentboxfull(this.src)">
+        <img src="C:\Users\91902\Downloads\code task 1\d8.jpg"  onclick="opendifferentboxfull(this.src)">
+        <img src="C:\Users\91902\Downloads\code task 1\d9.jpg"  onclick="opendifferentboxfull(this.src)">
+
+    </div>
+
+    <script>
+
+        var differentbox=document.getElementById("differentbox");
+        var differentboxfull=document.getElementById("differentboxfull");
+
+        function opendifferentboxfull(pic){
+            differentbox.style.display="flex";
+            differentboxfull.src=pic;
+        }
+
+        function closedifferentboxfull(){
+            differentbox.style.display="none";
+        }
+
+
+    </script>
+
+
+
+        
+    
+</body>
+</html>
